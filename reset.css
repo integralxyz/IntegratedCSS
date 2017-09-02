@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* ,  
+::after ,
+::before {
+	border-collapse: inherit;
+	border-spacing: inherit;
+    box-sizing: inherit; -moz-box-sizing: inherit; -webkit-box-sizing: inherit;
+	color: inherit;
+    cursor: inherit;
+	font: inherit;
+	hyphens: inherit;
+    list-style: inherit;
+	quotes: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+	text-shadow: inherit;
+	vertical-align: inherit;
+	white-space: inherit;
+    appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    backface-visibility: hidden;
+    background: none;
+    resize: none;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+::before ,
+::after {
+	content: none;
+}
+
+:root {
+    background: white;
+	border-collapse: collapse;
+    box-sizing: border-box;
+    cursor: auto;
+    color: black;
+    font: normal normal normal 16px/1 sans-serif;
+	hyphens: none;
+    list-style: none;
+    quotes: "\"" "\"" "'" "'";
+	text-rendering: auto;
+	text-align: left;
+	vertical-align: baseline;
+	white-space: normal;
+    -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
+ 	-webkit-tap-highlight-color: transparent;
+    -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;
+}
