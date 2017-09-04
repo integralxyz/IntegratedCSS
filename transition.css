@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    transition:
+        opacity 0.25s ,
+        transform 0.25s ,
+        background-color 0.25s ,
+        box-shadow 0.25s ,
+        color 0.25s ,
+        outline 0.25s ,
+        text-shadow 0.25s ,
+        z-index 0.25s
+    ;
+    -webkit-transition:
+        opacity 0.25s ,
+        -webkit-transform 0.25s ,
+        background-color 0.25s ,
+        box-shadow 0.25s ,
+        color 0.25s ,
+        outline 0.25s ,
+        text-shadow 0.25s ,
+        z-index 0.25s
+    ;
+}

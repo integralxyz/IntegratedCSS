@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+           [ href ]:not( [ tabindex= "-1" ] ) ,
+             iframe:not( [ tabindex= "-1" ] ) ,
+              input:not( [ tabindex= "-1" ] ):not( [ disabled ] ) ,
+             select:not( [ tabindex= "-1" ] ):not( [ disabled ] ) ,
+           textarea:not( [ tabindex= "-1" ] ):not( [ disabled ] ) ,
+             button:not( [ tabindex= "-1" ] ):not( [ disabled ] ) ,
+       [ tabindex ]:not( [ tabindex= "-1" ] ) ,
+[ contentEditable ]:not( [ tabindex= "-1" ] ) {
+    outline: 0.0625em dotted rgba( 0 , 0 , 0 , 0 );
+}
+
+:focus {
+    outline: 0.0625em dotted black;
+}

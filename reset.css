@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 * ,  
 ::after ,
@@ -14,22 +14,31 @@
 	quotes: inherit;
 	text-align: inherit;
 	text-decoration: inherit;
+	text-decoration-skip: inherit; -webkit-text-decoration-skip: inherit;
 	text-shadow: inherit;
 	vertical-align: inherit;
 	white-space: inherit;
     appearance: none; -webkit-appearance: none; -moz-appearance: none;
-    backface-visibility: hidden;
     background: none;
+    border: none;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    min-width: auto;
+    min-height: auto;
+    outline: none;
     resize: none;
-    border: 0;
+    width: auto;
     border-radius: 0;
     margin: 0;
-    outline: 0;
     padding: 0;
+    backface-visibility: hidden; -webkit-backface-visibility: hidden;
+    overflow: visible;
 }
 
 ::before ,
 ::after {
+    content: "";
 	content: none;
 }
 
@@ -43,11 +52,28 @@
 	hyphens: none;
     list-style: none;
     quotes: "\"" "\"" "'" "'";
-	text-rendering: auto;
 	text-align: left;
+	text-decoration: none;
+	text-decoration-skip: objects; -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+	text-rendering: auto;
 	vertical-align: baseline;
 	white-space: normal;
     -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;
  	-webkit-tap-highlight-color: transparent;
-    -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+}
+
+::-webkit-input-placeholder { color: inherit; }
+    ::-ms-input-placeholder { color: inherit; }
+     :-ms-input-placeholder { color: inherit; }
+         ::-moz-placeholder { color: inherit; }
+          :-moz-placeholder { color: inherit; }
+
+::-moz-selection {
+    background: none;
+    color: inherit;
+}
+::selection {
+    background: none;
+    color: inherit;
 }

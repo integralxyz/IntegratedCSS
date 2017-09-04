@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+:disabled ,
+[ disabled ] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+:disabled :disabled  ,
+[ disabled ] [ disabled ] ,
+:disabled [ disabled ]  ,
+[ disabled ] :disabled {
+    opacity: 1;
+}
